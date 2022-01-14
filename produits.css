@@ -1,0 +1,51 @@
+
+button {
+    /* float: right; */
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: rgb(168, 168, 168);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+.title {
+    display: flex;
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-items: stretch;
+}
+.search-container {
+    /* padding: 3%; */
+    margin-right: 30px;
+}
+.search-container button {
+    height: 54px;
+    margin: 0px;
+    border-radius: 0px 10px 10px 0px ;
+}
+.search-container input {
+    height: 40px;
+    margin: 0px;
+    border-radius: 10px 0px 0px 10px ;
+}
+.search-container form {
+    margin: 0px;
+}
+#titre {
+    text-align: center;
+    flex-basis: 50%;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
