@@ -45,7 +45,21 @@ input[type=text] {
     flex-basis: 50%;
     font-size: 30px;
     font-weight: 700;
+    color: #4F5051;
 }
-
+table {
+    margin: auto;
+    background-color: white;
+}
+/* .tableau {
+    align-content: center;
+} */
+/* td img {
+    width: 42px;
+} */
+#action img {
+    width: 35px;
+    padding: 10px;
+}
 
 
