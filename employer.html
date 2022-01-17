@@ -55,7 +55,7 @@
                 </form>
             </div>
             <div>
-                <img src="/img/ajouter.png" alt="" />
+                <button id="myBtn"><img src="/img/ajouter.png" alt=""></button>
             </div>
         </div>
     </section>
@@ -94,6 +94,29 @@
             </table>
         </div>
     </section>
-</body>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Nouveau employé</h2>
+            <form action="">
+                <br>
+                <label for="Nom">Nom</label><br>
+                <input type="text" name="Nom" id="Nom" value=""><br><br>
+                <label for="Prénom">Prénom</label><br>
+                <input type="text" name="Prénom" id="Prénom" value=""><br><br>
+                <label for="Utilisateur">Utilisateur</label><br>
+                <input type="text" name="Utilisateur" id="Utilisateur" value=""><br><br>
+                <label for="Mot de passe">Mot de passe</label><br>
+                <input type="text" name="Mot de passe" id="Mot de passe" value=""><br><br>
+                <input id="ajouter" type="submit" value="Ajouter">
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="produits.js"></script>
 </html>

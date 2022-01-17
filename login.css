@@ -1,0 +1,27 @@
+.logo {
+    width: 144px;
+    margin-left: 40px;
+    padding: 10px;
+}
+.box {
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: center;
+    margin: 15%;
+    margin-top: 7% ;
+}
+.box form{
+    padding: 8%;
+}
+.box form label{
+    color: #4F5051;
+}
+.box form input{
+    border: 0px;
+    height: 25px;
+    width: 100%;
+}
+#sub{
+    background-color: #37383C;
+    color: white;
+}

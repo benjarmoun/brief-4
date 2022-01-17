@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="produits.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="shortcut icon" type="image/png" href="img/rent me logo.jpg"> -->
 </head>
 
 <body>
@@ -56,7 +55,7 @@
                 </form>
             </div>
             <div>
-                <img src="/img/ajouter produit.png" alt="">
+                <button id="myBtn"><img src="/img/ajouter produit.png" alt=""></button>
             </div>
         </div>
     </section>
@@ -66,7 +65,7 @@
                 <tr>
                     <th>#</th>
                     <th>Image</th>
-                    <th>Titres</th>
+                    <th>Titre</th>
                     <th>Categorie</th>
                     <th>Quantité</th>
                     <th>Prix</th>
@@ -123,9 +122,37 @@
         </div>
     </section>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Nouveau Produit</h2>
+            <h3>Image</h3>
+            <img src="img/choisir un fichier.png" alt="">
+            <form action="">
+                <br><label for="Titre">Titre</label><br>
+                <input type="text" name="Titre" id="Titre" value=""><br><br>
+                <label for="Catégorie">Catégorie</label><br>
+                <select name="Catégorie" id="Catégorie">
+                    <option value="Science">Science</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Philosophy">Philosophy</option>
+                </select><br><br>
+                <label for="Quantité">Quantité</label><br>
+                <input type="text" name="Quantité" id="Quantité" value=""><br><br>
+                <label for="Prix">Prix</label><br>
+                <input type="text" name="Prix" id="Prix" value=""><br><br>
+                <input id="ajouter" type="submit" value="Ajouter">
+            </form>
+        </div>
+
+    </div>
+
 
 
 
 </body>
-
+<script src="produits.js"></script>
 </html>
