@@ -1,0 +1,167 @@
+
+/* start section of statistic */
+
+.operation_produit{
+    padding: 1.5% 0%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin: 0% 5%;
+    background-color:red;
+}
+.statistic_table div {
+    overflow-x: scroll;
+    background-color: #FFFFFF;
+}
+
+
+/* serch */
+.content_statistic_1{
+    padding: 1.5% 0%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin: 0% 5%;
+}
+
+
+#operation_2 a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #4F5051;
+  width: 165px;
+  background-color: #2C92E2;
+  border-radius: 10px;
+}
+#operation_2 a img{
+  width: 20px;
+  height: 40px;
+  margin-right: 10px;
+}
+#operation_1 p{
+  font-family: 'EB Garamond' , Bold;
+  font-size: 30px;
+  color: #4F5051;
+}
+#operation_2 p{
+  font-family: 'EB Garamond' , normal;
+  font-size: 20px;
+  color: #4F5051;
+}
+
+
+/* ajouter */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  place-content: center;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  /* padding-top: 100px; Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: hsl(0deg 0% 77% / 77%); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  /* margin-top: -5%; */
+}
+.modal-content p{
+  color: #4F5051;
+  font-family: 'EB Garamond' , Bold;
+  font-size: 30px;
+}
+/* The Close Button */
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.ma_contact_child input , select{
+  width: 100%;
+  height: 33px;
+  font-size: 14px;
+  background-color: #f5f5f5;
+  border: 1px solid #f89c67;
+  padding-left: 3px;
+  border-radius: 5px;
+}
+form input[type="file"] {
+  padding-top: 4.5px;
+  margin-bottom: 2%;
+}
+input #Image, #Titres, #Catégore, #Quantité, #Prix {
+  
+  margin-bottom: 2%;
+}
+.ma_contact_child .ho {
+  color: #191919;
+  background-color: #ff9900;
+}
+
+
+
+/* media query */
+
+@media (max-width: 484px) {
+
+
+
+  .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 90%;
+      /* margin-top: -5%; */
+  }
+  
+  .modal-content p {
+      color: #4F5051;
+      font-family: 'EB Garamond' , Bold;
+      font-size: 20px;
+  }
+  
+  .ma_contact_child input {
+      width: 103%;
+      height: 25px;
+      font-size: 12px;
+      background-color: #f5f5f5;
+      border: 1px solid #f89c67;
+      padding-left: 3px;
+      border-radius: 5px;
+      margin-bottom: 2%;
+  }
+  .ma_contact_child input br{
+    display: inline;
+    content: '';
+}
+
+  form input[type="file"] {
+      padding-top: 1.5px;
+  }
+    }

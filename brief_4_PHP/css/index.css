@@ -1,0 +1,272 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color:#E5E5E5 ;
+}
+/* header */
+
+header{
+    background-color:#FFFFFF ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 100px;
+    flex-wrap: wrap;
+}
+
+.header_mobile{
+    background-color:#FFFFFF ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header_mobile div{
+    display: none
+}
+
+
+/* .logo{
+    width: 142px;
+    height:60px;
+} */
+.logo {
+    width: 8em;
+    height: 3.75em;
+}
+nav a{
+    padding-left: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+nav a img{
+    width: 30px;
+    height: 47px;
+}
+
+/* end header */
+
+/* line */
+hr{
+    height:4px;
+    background-color:#E5E5E5;
+    border-width: 0px;
+}
+/* end line */
+
+/* start body */
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:white;
+}
+.content a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #4F5051;
+}
+.content a img{
+    width: 20px;
+    height: 40px;
+    margin-right: 10px;
+}
+.content a p{
+    font-family: 'EB Garamond' , Bold;
+    font-size: 18px;
+}
+/* end body */
+/* start section of statistic */
+
+.content_statistic_1{
+    padding: 1.5% 0%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin: 0% 5%;
+}
+.card_statistic{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 15em;
+        height: 6em;
+        border-radius: 13px;
+}
+#card_1{ background-color: #3BAAAE; }
+#card_2{background-color: #EF6857;  }
+#card_3{background-color: #2C92E2 ;  }
+.card_statistic p{
+    color: #0b0b0b;
+    font-family: 'EB Garamond' , Bold;
+    font-size: 20px;
+}
+/* end section of statistic_1 */
+
+/* end section of statistic_2 */
+
+.content_statistic_2{
+    padding:0.5% 1%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffffc0;
+    margin: 0% 5%;
+}
+.statistic_table{
+width: 80%;
+}
+.statistic_table p{
+    color: #0b0b0b;
+    font-family: 'EB Garamond' , Bold;
+    font-size: 22px;
+    text-align: center;
+    padding: 2%;
+}
+/* end section of statistic_2 */
+
+/* start  */
+.fa{
+    font-size: 25px;
+padding-right: 15px;
+}
+
+/* end */
+
+
+th, td {
+    padding: 6px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  table {
+    border: 1.5px solid  #ddd;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+.header_mobile{
+    display: none;
+}
+ @media (max-width: 806px) {
+    .card_statistic{
+        width: 10em;
+    }
+    .card_statistic p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 540px) {
+    .header_mobile{
+        display: none;
+    }
+    
+    .card_statistic p{
+        font-size: 10px;
+    }
+    .card_statistic{
+        width: 7em;
+        height: 4.5em;
+    }
+    .content_statistic_2{
+        margin: 8% 5%;
+    }
+    .content_statistic_1{
+        margin: 5% 5%;
+    }
+    header{
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+#my_menu{
+    display: none;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+}
+#my_menu a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #E5E5E5;
+    margin: 4% 5% 4% 4%;
+    color: black;
+    width: 52%;
+}
+#my_menu a img{
+    width: 20px;
+    height: 40px;
+    margin-right: 10px;
+}
+@media (max-width: 482px){
+    .header_mobile{
+        display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 7;
+    }
+    
+    .header_desktop , .content{
+        display: none;
+    }
+    nav a{
+        padding-left: 20px;
+        padding-right: 20px;
+        text-decoration: none;
+        color: #000000;
+    }
+.card_statistic {
+    width: 13em;
+    height: 7.5em;
+    margin: 4%;
+    }
+    .content_statistic_1{
+        margin: 5% 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/* tr ===>>> table row  */
+/* td ===>>> table data  */
+/* th ===>>> table header  */
+/* tr < th < tr  */
+/* tr < td < tr  */
+/* table < tr < table  */
+/* table < tr < th < tr or tr < td < tr < table */
+
+/* thead ==> header dyal table */
+/* thead <tr < th < tr < thead */
+/* tbody ==> body dyal table */
+/* tbody <tr < td < tr < tbody */
+/* tf ==> footer dyal table */
+/* tf <tr < td < tr < tf */
